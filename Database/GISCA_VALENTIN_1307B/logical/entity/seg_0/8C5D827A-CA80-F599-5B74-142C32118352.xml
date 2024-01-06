@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8C5D827A-CA80-F599-5B74-142C32118352" name="PlayerDetails">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:39:53 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="DateOfBirth" id="F73AD1C7-40CB-5C44-49D7-0C9165CACA93">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:59:29 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Email" id="D3D085C2-CB3C-C3FD-D0F6-2619E9685D85">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:59:46 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;));"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PhoneNumber" id="4A1390F0-2FBA-210D-DA8B-A4F83D3DA0BB">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:00:29 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<constraintName>PhoneNumber NUMBER</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="regexp_like(phone, ^07\d{8}$);&lt;br/&gt;"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PlayerID" id="456D2264-DE5F-2B39-FBF8-7E15551A5898">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:31:35 UTC</createdTime>
+<generatorID>12AC8D0E-1D73-2C3C-4483-B65AF6836B25</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<referedAttribute>16B35EC5-D418-CC14-D6FA-C8B792DDD587</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7149F43D-B8A3-9934-E11D-BB442E0203BA" name="EMAIL_UNIQUE">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:43:11 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<newElementsIDs>D3D085C2-CB3C-C3FD-D0F6-2619E9685D85</newElementsIDs>
+<usedAttributes>
+<attributeRef>D3D085C2-CB3C-C3FD-D0F6-2619E9685D85</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

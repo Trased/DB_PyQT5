@@ -1,0 +1,131 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="8780D990-C1C7-1AD7-DCF9-B5843E05B4B3" name="Game">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:40:06 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="GameID" id="3C19D5BA-394F-A729-0A8A-BBC04FDD4DC1">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:02:10 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RoundNumber" id="21BCBD17-98C3-92A9-00BB-09B6DE2BF022">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:02:40 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(RoundNumber, &apos;^(1\/16|1\/8|1\/4|1\/2|1)$&apos;);"/>
+</checkConstraint>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="BoardNumber" id="C3BAF683-4BD3-21A7-642D-B8E79A6EF569">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:03:09 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RaitingInPlay" id="2264C69E-F7F0-D255-BBC4-6A59103146C6">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:04:06 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<constraintName>RAITING NUMBER</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(RaitingInPlay, &apos;^[0-9]{1,2}$&apos;);"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RegistrationID" id="D11AAFE0-5298-92ED-7C58-77CC7F32E506">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:32:02 UTC</createdTime>
+<generatorID>441B995F-AB37-4DE4-C503-B64DE6D21F6E</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<referedAttribute>40933E32-AAD1-079B-FB73-BDCFECD7527F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="RegistrationID1" id="E78D9B56-9BFB-4346-1C63-2C3769E470C4">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:08 UTC</createdTime>
+<generatorID>115BEEF8-53FD-56AE-14F4-D45D76FBF12C</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<referedAttribute>40933E32-AAD1-079B-FB73-BDCFECD7527F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="4B58D1A7-3BD0-4916-899C-2EC5DF7ED0C9" name="Game PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:02:26 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C19D5BA-394F-A729-0A8A-BBC04FDD4DC1</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

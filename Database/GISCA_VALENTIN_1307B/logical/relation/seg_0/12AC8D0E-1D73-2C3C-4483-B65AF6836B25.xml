@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="player_details_fk" directorySegmentName="seg_0" id="12AC8D0E-1D73-2C3C-4483-B65AF6836B25">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:31:35 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<sourcePk>58A61F53-D344-3FF3-3E03-DD6CFB9F99EB</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>apartin</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>59688F28-BAEA-D11B-77C4-F97885050BC6</sourceEntity>
+<targetCardinalityString>1</targetCardinalityString>
+<targetEntity>8C5D827A-CA80-F599-5B74-142C32118352</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

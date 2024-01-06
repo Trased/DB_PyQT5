@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="GISCA_VALENTIN_1307B" id="CD7118BD-C99D-F57F-8E65-222E32952661" version="3.5">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:34:18 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>CD7118BD-C99D-F57F-8E65-222E32952661</designId>
+</OSDM_Design>

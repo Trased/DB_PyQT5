@@ -1,0 +1,80 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="2BFCB299-BA40-18B6-D204-569F1DBD0AEC" name="Registration">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:39:59 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="RegistrationID" id="40933E32-AAD1-079B-FB73-BDCFECD7527F">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:00:53 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="PlayerID" id="B75CCEE7-8A45-56E6-309C-94A42F8F0896">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:31:53 UTC</createdTime>
+<generatorID>4E825F01-30E5-5476-BE4B-CF8AF1B23A8D</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<referedAttribute>16B35EC5-D418-CC14-D6FA-C8B792DDD587</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="TournamentID" id="3801D43F-679B-2525-8808-A63E36DCAF61">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:31:58 UTC</createdTime>
+<generatorID>95061709-5EED-AB7C-F45C-EF210B48C047</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<referedAttribute>D5FA91D2-9D06-142A-77B0-61903F93D91E</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="68E85636-9517-3BB9-7DA5-7A4A9B5440BD" name="Registration PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:01:14 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>40933E32-AAD1-079B-FB73-BDCFECD7527F</newElementsIDs>
+<usedAttributes>
+<attributeRef>40933E32-AAD1-079B-FB73-BDCFECD7527F</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

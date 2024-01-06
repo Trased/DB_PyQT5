@@ -1,0 +1,88 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7835D14B-908F-A9B7-8AB3-677441A99945" name="Player">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>59688F28-BAEA-D11B-77C4-F97885050BC6</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="PlayerID" id="549E072A-3C6A-2270-5B8B-D970ADA16734">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>16B35EC5-D418-CC14-D6FA-C8B792DDD587</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="FirstName" id="8A3D8751-0DC3-A4BC-95FB-863C1758DC68">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>8386AFFB-CE5F-13A1-23D2-BED68778FEA3</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>player_firstname_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(FirstName, &apos;^[a-zA-Z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LastName" id="8039E766-F1F5-4850-5847-58B105E3CB25">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>C7F4891D-6B6A-2023-408B-642AE4B9C4AF</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>player_lastname_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(LastName, &apos;^[a-zA-Z]+$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Raiting" id="981CBECA-F855-3EAD-31CE-A120ABD02626">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>C75DFAC4-00AB-1739-FECB-CF635FD5BB96</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>player_raiting_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="Raiting NOT LIKE &apos;[^0-9]&apos;"/>
+</checkConstraint>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58A84E3E-48E4-9A00-D993-255F34F8F016" name="Player_PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>58A61F53-D344-3FF3-3E03-DD6CFB9F99EB</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="549E072A-3C6A-2270-5B8B-D970ADA16734"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

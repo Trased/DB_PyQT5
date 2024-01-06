@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="tournament_id_fk" directorySegmentName="seg_0" id="95061709-5EED-AB7C-F45C-EF210B48C047">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:31:58 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<sourcePk>4C70E37C-DABD-DD75-18E3-CB00668722AB</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>are</nameOnSource>
+<nameOnTarget>face parte din</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>C161361F-67D2-5E90-1F40-F5C913C9BC37</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>2BFCB299-BA40-18B6-D204-569F1DBD0AEC</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

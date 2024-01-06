@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6EBA6BD3-D742-A15A-0258-E2635FCF91B3" name="Game">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>8780D990-C1C7-1AD7-DCF9-B5843E05B4B3</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="GameID" id="7E0623F2-3FA4-0BC7-29E9-F72A43488E92">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>3C19D5BA-394F-A729-0A8A-BBC04FDD4DC1</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="WinnerID" id="46D66B03-C8FE-C43A-84C1-B2078D4E961A">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>D11AAFE0-5298-92ED-7C58-77CC7F32E506</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="59843DBF-8E15-83A9-3E31-D91088063E5C" referredColumn="A9368BAB-6030-7AA9-BBE0-796A981047FD"/>
+</associations>
+</Column>
+<Column name="LoserID" id="0F3F2124-B346-191F-2251-EB7D6C43707E">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>E78D9B56-9BFB-4346-1C63-2C3769E470C4</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="765FA391-CAD4-9539-2138-50669B82B2CA" referredColumn="A9368BAB-6030-7AA9-BBE0-796A981047FD"/>
+</associations>
+</Column>
+<Column name="RoundNumber" id="E9EEC06B-DC4E-5095-42D8-F4C82B7BF571">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>21BCBD17-98C3-92A9-00BB-09B6DE2BF022</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>round_number_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(RoundNumber, &apos;^(1/16|1/8|1/4|1/2|1)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>3,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BoardNumber" id="664EB3F6-BABF-CA47-6DB7-575E880D4A28">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>C3BAF683-4BD3-21A7-642D-B8E79A6EF569</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="RaitingInPlay" id="9BE0994E-A4D6-5D13-9E82-E9F2ACBC092D">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>2264C69E-F7F0-D255-BBC4-6A59103146C6</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>raiting_in_play_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(RaitingInPlay, &apos;^[0-9]{1,2}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9553DAB5-4077-0F7F-547F-3252467479D9" name="Game_PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>4B58D1A7-3BD0-4916-899C-2EC5DF7ED0C9</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7E0623F2-3FA4-0BC7-29E9-F72A43488E92"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7629429-966B-FFA4-550A-BCFAAE0CCF7A" name="winner_id_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>441B995F-AB37-4DE4-C503-B64DE6D21F6E</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="46D66B03-C8FE-C43A-84C1-B2078D4E961A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FBD40D7A-8F2F-69FB-1FD8-DF06DC2CE1EA" name="loser_id_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>115BEEF8-53FD-56AE-14F4-D45D76FBF12C</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0F3F2124-B346-191F-2251-EB7D6C43707E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

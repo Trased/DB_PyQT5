@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="loser_id_fk" directorySegmentName="seg_0" id="115BEEF8-53FD-56AE-14F4-D45D76FBF12C">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:08 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<sourcePk>68E85636-9517-3BB9-7DA5-7A4A9B5440BD</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>a pierdut</nameOnSource>
+<nameOnTarget>pierzator</nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>2BFCB299-BA40-18B6-D204-569F1DBD0AEC</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>8780D990-C1C7-1AD7-DCF9-B5843E05B4B3</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

@@ -1,0 +1,109 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1EDE6144-A43A-3DEB-CC5F-0D4F7150CC57" name="PlayerDetails">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>8C5D827A-CA80-F599-5B74-142C32118352</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="DateOfBirth" id="9780649C-DC1C-C159-6BCE-DD296710CF18">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>F73AD1C7-40CB-5C44-49D7-0C9165CACA93</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Email" id="966BF40B-0067-F5F9-4DEE-549E76FF9728">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>D3D085C2-CB3C-C3FD-D0F6-2619E9685D85</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>pdetails_email_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Email, &apos;[a-z0-9._%-]+@[a-z0-9._%-]+\.[a-z]{2,4}&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PhoneNumber" id="792BB646-2A77-B162-8122-5F91E0810EAE">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>4A1390F0-2FBA-210D-DA8B-A4F83D3DA0BB</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>pdetails_phone_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(PhoneNumber, &apos;^07\d{8}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PlayerID" id="9A7AD965-4E6B-8ADE-88D9-4F4C962AF534">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>456D2264-DE5F-2B39-FBF8-7E15551A5898</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="AFB41BE8-88EE-C0E3-2D02-9CC6061D4CA4" referredColumn="549E072A-3C6A-2270-5B8B-D970ADA16734"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3F408B55-390C-3626-2947-F68DEEAD16CD" name="EMAIL_UNIQUE">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>7149F43D-B8A3-9934-E11D-BB442E0203BA</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="966BF40B-0067-F5F9-4DEE-549E76FF9728"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="077AAD0A-BC8E-230B-3721-098B3984ED2F" name="PlayerDetails__IDX">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>12AC8D0E-1D73-2C3C-4483-B65AF6836B25</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="9A7AD965-4E6B-8ADE-88D9-4F4C962AF534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E8C1FFBD-5FF1-BD88-0C31-384EEE08E843" name="player_details_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>12AC8D0E-1D73-2C3C-4483-B65AF6836B25</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9A7AD965-4E6B-8ADE-88D9-4F4C962AF534"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

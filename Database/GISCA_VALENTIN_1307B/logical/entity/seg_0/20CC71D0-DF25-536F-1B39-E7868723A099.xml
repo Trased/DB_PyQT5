@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="20CC71D0-DF25-536F-1B39-E7868723A099" name="GameMoves">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:40:09 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="MoveID" id="3C77F920-E037-4D5A-F596-B57DA8187111">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:04:24 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MoveNumber" id="5D3A126F-A4F9-5835-24D6-E6E055EDAC4B">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:04:36 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<constraintName>Move NUMBER</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(MoveNumber, &apos;^[0-9]{1,3}$&apos;);"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="MoveNotation" id="EF61B866-4D1A-39F9-BBAF-8C1FA7BB1D5C">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:04:45 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(MoveNotation, &apos;^(NBRQK)?[a-h]?[1-8]?[x-]?[a-h][1-8][NBRQ]?\+?\#?|(O-O|O-O-O)$&apos;);"/>
+</checkConstraint>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="GameID" id="B5361ED7-30DF-8E77-CACD-DA176ECA97B4">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:32:07 UTC</createdTime>
+<generatorID>C31D42E2-676A-236F-2EE0-C1E18751D57D</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="true"/>
+</engineerTo>
+<referedAttribute>3C19D5BA-394F-A729-0A8A-BBC04FDD4DC1</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="6584AFD2-EAE1-E239-F44B-628D391DDB72" name="GameMoves PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 10:04:28 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="023798E6-3E14-18D1-A671-81008F11A393" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3C77F920-E037-4D5A-F596-B57DA8187111</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

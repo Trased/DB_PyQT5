@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="1B58E4C6-54F7-45D3-B770-58B76EC97695" containerWithKeyObject="60DD41C9-FDC2-6F9A-4694-EDB16A7014B3" localFKIndex="5A6AF04C-8E52-A1FB-44AC-7972C9B6EDC1" name="tournament_id_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>95061709-5EED-AB7C-F45C-EF210B48C047</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>BEC26EA5-4E1F-75F0-3D3A-824DB89431FF</referredTableID>
+<keyObject>B6E83E07-0E72-149B-BFA3-527882851EF7</keyObject>
+<referredKeyID>B6E83E07-0E72-149B-BFA3-527882851EF7</referredKeyID>
+<mandatory>true</mandatory>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="DBECB04C-ED23-992F-8764-8A00920142D7" mainViewID="30D5D6D8-3788-F2E8-9DAF-2BEE55F6D7C3">
+<createdBy>fiury</createdBy>
+<createdTime>2023-10-29 09:34:18 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

@@ -1,0 +1,98 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="355737D5-C70D-E776-81ED-E661DC9D1FEA" name="GameMoves">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>20CC71D0-DF25-536F-1B39-E7868723A099</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MoveID" id="18516DDE-8B05-D326-E504-13400966D21B">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>3C77F920-E037-4D5A-F596-B57DA8187111</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="GameID" id="08B58EC2-346C-CAD4-D29A-2D5B78B99CE6">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>B5361ED7-30DF-8E77-CACD-DA176ECA97B4</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="30B37D75-EA92-D021-B25D-C79E97DF8254" referredColumn="7E0623F2-3FA4-0BC7-29E9-F72A43488E92"/>
+</associations>
+</Column>
+<Column name="MoveNumber" id="8A584B64-FC45-F520-3A22-4D5CE6627A95">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>5D3A126F-A4F9-5835-24D6-E6E055EDAC4B</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>move_number_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(MoveNumber, &apos;^[0-9]{1,3}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MoveNotation" id="563AF2F2-DEDB-8374-904E-6B6ED1DF8CDA">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>EF61B866-4D1A-39F9-BBAF-8C1FA7BB1D5C</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>move_notation_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(MoveNotation, &apos;^(NBRQK)?[a-h]?[1-8]?[x-]?[a-h][1-8][NBRQ]?\+?\#?|(O-O|O-O-O)$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9ED9A7A-7601-883A-4995-264E94549882" name="GameMoves_PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>6584AFD2-EAE1-E239-F44B-628D391DDB72</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="18516DDE-8B05-D326-E504-13400966D21B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="061249A7-E35E-02C4-07DB-C28C851067E4" name="game_id_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>C31D42E2-676A-236F-2EE0-C1E18751D57D</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="08B58EC2-346C-CAD4-D29A-2D5B78B99CE6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,128 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="BEC26EA5-4E1F-75F0-3D3A-824DB89431FF" name="Tournament">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>C161361F-67D2-5E90-1F40-F5C913C9BC37</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="TournamentID" id="FE20ABA2-63BB-C2BE-FE53-F5C2F1203EBD">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>D5FA91D2-9D06-142A-77B0-61903F93D91E</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TournamentName" id="3A2EC6AD-DFBA-9CBD-DD67-2F8A465CD39C">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>20F6BC2C-8CED-6E72-6EFF-8210D8D160F2</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>tournament_name_const</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(TournamentName, &apos;^[a-zA-Z0-9 ]{1,30}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>30,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="StartDate" id="C4F70C96-3832-D428-BC19-259D2D3F8BAB">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>88DD1D0F-8D0E-53F5-7E2F-E6D45BCBA137</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EndDate" id="97492A00-3211-BE02-3FDC-C57621772ED3">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>7E766901-A1B9-9A90-9569-3DB644203711</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>tournament_duration_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="EndDate-StartDate &gt; 1"/>
+</checkConstraint>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Location" id="FA169F6E-3760-421E-4282-5C7A963C3473">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>FF0C0B7C-1D65-3E9C-C068-E591CF2CC664</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>tournament_location_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Location, &apos;^[a-zA-Z]{1,10}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="Prize" id="C3ED3EB6-93D7-4FA9-2089-E9EFDA8AE956">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>5E57DC51-DDD2-A8F5-C768-F056E8732C03</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<constraintName>tournament_prize_const</constraintName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT043</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<checkConstraint>
+<implementationDef dbType="Generic Constraint" definition="REGEXP_LIKE(Prize, &apos;^[0-9]{1,7}$&apos;)"/>
+</checkConstraint>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B6E83E07-0E72-149B-BFA3-527882851EF7" name="Tournament_PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>4C70E37C-DABD-DD75-18E3-CB00668722AB</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="FE20ABA2-63BB-C2BE-FE53-F5C2F1203EBD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="D6A365CA-4123-1C1E-4967-D84890251734" name="TOURNAMENT_NAME">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>2B33D740-29F4-421F-E0E0-4E81F9B95213</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A2EC6AD-DFBA-9CBD-DD67-2F8A465CD39C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

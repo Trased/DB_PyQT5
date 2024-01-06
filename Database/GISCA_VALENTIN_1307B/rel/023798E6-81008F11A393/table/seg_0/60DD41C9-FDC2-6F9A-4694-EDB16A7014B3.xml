@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="60DD41C9-FDC2-6F9A-4694-EDB16A7014B3" name="Registration">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>2BFCB299-BA40-18B6-D204-569F1DBD0AEC</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="RegistrationID" id="A9368BAB-6030-7AA9-BBE0-796A981047FD">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>40933E32-AAD1-079B-FB73-BDCFECD7527F</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,10,</ownDataTypeParameters>
+<autoIncrementColumn>true</autoIncrementColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PlayerID" id="9111D214-C964-D0F0-3707-BACC7FB69D55">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>B75CCEE7-8A45-56E6-309C-94A42F8F0896</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="42552694-85D6-A9D4-F9AC-F197C9F662FB" referredColumn="549E072A-3C6A-2270-5B8B-D970ADA16734"/>
+</associations>
+</Column>
+<Column name="TournamentID" id="6036A3C1-3C68-CC74-8414-3AC5557F4783">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>3801D43F-679B-2525-8808-A63E36DCAF61</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="1B58E4C6-54F7-45D3-B770-58B76EC97695" referredColumn="FE20ABA2-63BB-C2BE-FE53-F5C2F1203EBD"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9F870440-6974-D5B3-3616-D6403ED6B0AA" name="Registration_PK">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>68E85636-9517-3BB9-7DA5-7A4A9B5440BD</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A9368BAB-6030-7AA9-BBE0-796A981047FD"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="C96FD096-8D31-2496-14D8-5DF28A358162" name="PlayerTournamentUN">
+<createdBy>fiury</createdBy>
+<createdTime>2023-12-05 08:22:49 UTC</createdTime>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9111D214-C964-D0F0-3707-BACC7FB69D55"/>
+<colUsage columnID="6036A3C1-3C68-CC74-8414-3AC5557F4783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5A6AF04C-8E52-A1FB-44AC-7972C9B6EDC1" name="tournament_id_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>95061709-5EED-AB7C-F45C-EF210B48C047</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6036A3C1-3C68-CC74-8414-3AC5557F4783"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4CC3FC0F-E684-741B-10DB-5F71C3B7DC6E" name="player_id_fk">
+<createdBy>fiury</createdBy>
+<createdTime>2023-11-03 10:55:17 UTC</createdTime>
+<generatorID>4E825F01-30E5-5476-BE4B-CF8AF1B23A8D</generatorID>
+<ownerDesignName>GISCA_VALENTIN_1307B</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9111D214-C964-D0F0-3707-BACC7FB69D55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
